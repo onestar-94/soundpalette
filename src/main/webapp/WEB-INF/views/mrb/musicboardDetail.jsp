@@ -271,7 +271,7 @@ function like_func() {
 	    dataType: "json",
 	    /* "MRB_NUM="+MRB_NUM+"&MEM_NUM="+MEM_NUM, */
 	    /* 'MRB_NUM=' + ${map.MRB_NUM}, 'MEM_NUM=' + ${map.MEM_NUM} */
-	    data: "MRB_NUM="+${map.MRB_NUM}+"&MEM_NUM="+${map.MEM_NUM},
+	    data: "MRB_NUM="+${map.MRB_NUM}+"&MEM_NUM="+${sessionScope.MEM_NUM},
 	    success: function(data) {
 	      var like_img = '';
 	      

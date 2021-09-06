@@ -78,6 +78,42 @@
 							}
 						});
 			});
+	var myt_like = document.getElementById("like_img");
+	myt_like.onclick = function(){ like_func(); }
+
+	function like_func() {
+		
+		var MRB_NUM = ${map.MRB_NUM};
+		var MEM_NUM = ${map.MEM_NUM};
+		console.log("MRB_NUM, MEM_NUM : " + MRB_NUM +","+ MEM_NUM);
+		
+		
+
+		
+		$.ajax({
+		    url: "/palette/SOPA/myHit",
+		    type: "POST",
+		    cache: false,
+		    dataType: "json",
+		    /* "MRB_NUM="+MRB_NUM+"&MEM_NUM="+MEM_NUM, */
+		    /* 'MRB_NUM=' + ${map.MRB_NUM}, 'MEM_NUM=' + ${map.MEM_NUM} */
+		    data: "MRB_NUM="+${map.MRB_NUM}+"&MEM_NUM="+${sessionScope.MEM_NUM},
+		    success: function(data) {
+		      var like_img = '';
+		      
+		      if(data.HIT_DEL == 'Y'){
+		        like_img = "/palette/resources/images/like/unlike.png";
+		      } else {
+		        like_img = "/palette/resources/images/like/like.png";
+		      }      
+		      $('#like_img').attr('src', like_img);
+		      $('#like_cnt').html('<i class="ri-heart-line" style="padding-left: 5px"></i> : '+data.COUNTHIT);
+		    },
+		    error: function(request, status, error){
+		      alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+		    }
+		  });
+		}
 </script>
 
 </head>
@@ -99,7 +135,8 @@
 									<li class="col-md-3 p-0"><a class="nav-link"
 										data-toggle="pill" href="#emailandsms"> 좋아요 한 음악 </a></li>
 									<li class="col-md-3 p-0"><a class="nav-link"
-										data-toggle="pill" href="#manage-contact"> 내가 쓴 글 </a></li>
+										data-toggle="pill" href="#manage-contact" id="btn_mymrb">
+											내가 쓴 글 </a></li>
 								</ul>
 							</div>
 						</div>
@@ -210,7 +247,7 @@
 										<table class="data-tables table table-striped table-bordered">
 											<thead class="table" align="center">
 												<tr>
-													<th scope="col">글번호</th>
+													<th scope="col">번호</th>
 													<th scope="col">제목</th>
 													<th scope="col">작성자</th>
 													<th scope="col">날짜</th>
@@ -229,12 +266,10 @@
 														<td>${mon.MRB_DATE}</td>
 														<td><c:choose>
 																<c:when test="${sessionScope.HIT_DEL == 'Y'}">
-																	<img style="width: 25px" id="like_img"
-																		src="/palette/resources/images/like/unlike.png">
+																	<img style="width: 25px" id="like_img" src="/palette/resources/images/like/unlike.png">
 																	&nbsp;</c:when>
 																<c:otherwise>
-																	<img style="width: 25px" id="like_img"
-																		src="/palette/resources/images/like/like.png">
+																	<img style="width: 25px" id="like_img" src="/palette/resources/images/like/like.png">
 																	&nbsp;</c:otherwise>
 															</c:choose></td>
 														<td>${mon.MRB_CNT}</td>
@@ -317,59 +352,27 @@
 									<p></p>
 									<div class="table-responsive">
 										<table class="data-tables table table-striped table-bordered">
-											<thead class="table" align="center">
+											<thead class="thead-dark" align="center">
 												<tr>
-													<th scope="col">글번호</th>
+													<th scope="col">번호</th>
 													<th scope="col">제목</th>
+													<th scope="col">가수</th>
 													<th scope="col">작성자</th>
-													<th scope="col">날짜</th>
 													<th scope="col">좋아요</th>
-													<th scope="col">삭제</th>
 												</tr>
 											</thead>
 											<tbody align="center">
-												<tr>
-													<th scope="row">1</th>
-													<td></td>
-													<td></td>
-													<td></td>
-													<td></td>
-													<td><div
-															class="flex align-items-center list-user-action">
-															<a class="bg-primary" data-toggle="tooltip"
-																data-placement="top" title=""
-																data-original-title="Delete" href="#"><i
-																class="ri-delete-bin-line"></i></a>
-														</div></td>
-												</tr>
-												<tr>
-													<th scope="row">2</th>
-													<td></td>
-													<td></td>
-													<td></td>
-													<td></td>
-													<td><div
-															class="flex align-items-center list-user-action">
-															<a class="bg-primary" data-toggle="tooltip"
-																data-placement="top" title=""
-																data-original-title="Delete" href="#"><i
-																class="ri-delete-bin-line"></i></a>
-														</div></td>
-												</tr>
-												<tr>
-													<th scope="row">3</th>
-													<td></td>
-													<td></td>
-													<td></td>
-													<td></td>
-													<td><div
-															class="flex align-items-center list-user-action">
-															<a class="bg-primary" data-toggle="tooltip"
-																data-placement="top" title=""
-																data-original-title="Delete" href="#"><i
-																class="ri-delete-bin-line"></i></a>
-														</div></td>
-												</tr>
+												<c:forEach items="${list}" var="row">
+													<tr>
+														<td>${row.MRB_NUM}</td>
+														<td><a
+															href="/palette/SOPA/mrbDetail?MRB_NUM=${row.MRB_NUM}"
+															name="title">${row.MRB_TITLE }</a></td>
+														<td>${row.MRB_ART}</td>
+														<td>${row.MEM_NICK}</td>
+														<td>${row.COUNTHIT}</td>
+													</tr>
+												</c:forEach>
 											</tbody>
 										</table>
 									</div>

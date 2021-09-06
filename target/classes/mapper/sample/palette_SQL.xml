@@ -218,8 +218,17 @@
 			  AND PIM.PLAY_NUM = #{PLAY_NUM}
 		]]>
 	</select>
+	
+	<select id="selectPlayLists" parameterType="hashmap"
+		resultType="hashmap">
+		<![CDATA[
+			SELECT P.PLAY_NUM, P.PLAY_TITLE, I.IMG_NAME
+			FROM PLAYLIST P, IMG I
+			WHERE P.IMG_NUM = I.IMG_NUM AND P.MEM_NUM = #{MEM_NUM}
+		]]>
+	</select>
 
-	<update id="insertPlayList" parameterType="hashmap">
+	<!-- <update id="insertPlayList" parameterType="hashmap">
 		<![CDATA[
 			DECLARE
 				IMGNUM NUMBER;
@@ -242,7 +251,19 @@
 		<![CDATA[	
 			END;
 		]]>
-	</update>
+	</update> -->
+	
+	<insert id="insertPlayList" parameterType="hashmap"
+		useGeneratedKeys="true" keyProperty="PLAY_NUM">
+		<selectKey keyProperty="PLAY_NUM" resultType="int"
+			order="BEFORE">
+			SELECT PLAY_NUM_SEQ.NEXTVAL FROM DUAL
+		</selectKey>
+		<![CDATA[
+			INSERT INTO PLAYLIST(PLAY_NUM, PLAY_TITLE, MEM_NUM) 
+			VALUES(#{PLAY_NUM}, 'NEW PLAYLIST', #{MEM_NUM})
+		]]>
+	</insert>
 
 	<select id="selectMemberHitMusic" parameterType="hashmap"
 		resultType="hashmap">

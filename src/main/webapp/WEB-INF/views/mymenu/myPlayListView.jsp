@@ -42,6 +42,7 @@
                                  <p >몇곡 있는지?</p>
                                  <div class="d-flex align-items-center">                                       
                                     <a href="javascript:void(0);" class="btn btn-primary iq-play mr-2">재생</a>
+                                    <a href="javascript:void(0);" class="btn btn-primary iq-play mr-2">추가</a>
                                  </div>
                               </div>
                               <div class="music-right">
@@ -115,80 +116,6 @@
 								<td>
 									<div>
                                  		<a class="iq-icons-list" href="#" onclick="confirm('삭제 하시겠습니까?')"><i class="ion-close-circled" style="padding-top:10px"></i></a>
-                              		</div>
-								</td>
-							</tr>
-							<tr>
-								<th>
-									<div class="custom-control custom-checkbox custom-control-inline">
-                              			<input type="checkbox" class="custom-control-input" id="customCheck2">
-                             			<label class="custom-control-label" for="customCheck2"></label>
-                           			</div>
-                             	</th>
-								<th scope="row">2</th>
-								<td>
-                                    <img src="/palette/resources/images/dashboard/realease-song/iur.jpg" class="img-fluid avatar-50 rounded" alt="author-profile">
-                                </td>
-								<td>celebrity</td>
-								<td>3:29</td>
-								<td>아이유(IU)</td>
-								<td>
-									<div>
-                                 		<a class="iq-icons-list" href="#"><i class="ion-heart"></i></a>
-                              		</div>
-								</td>
-								<td>
-									<div>
-                                 		<a class="iq-icons-list" href="#"><i class="ion-play"></i></a>
-                              		</div>
-								</td>
-								<td>
-										<a class="iq-icons-list" href="#">
-                                    <div data-icon="n" class="icon"></div></a>
-                                    	<a class="iq-icons-list" href="#">
-                                    <div data-icon="k" class="icon"></div></a>
-                                 
-								</td>
-								<td>
-									<div>
-                                 		<a class="iq-icons-list" href="#" onclick="confirm('삭제 하시겠습니까?')"><i class="ion-close-circled"></i></a>
-                              		</div>
-								</td>
-							</tr>
-							<tr>
-								<th>
-									<div class="custom-control custom-checkbox custom-control-inline">
-                              			<input type="checkbox" class="custom-control-input" id="customCheck3">
-                             			<label class="custom-control-label" for="customCheck3"></label>
-                           			</div>
-                             	</th>
-								<th scope="row">3</th>
-								<td>
-                                    <img src="/palette/resources/images/dashboard/realease-song/q.jpg" class="img-fluid avatar-50 rounded" alt="author-profile">
-                                </td>
-								<td>내손을 잡아</td>
-								<td>3:29</td>
-								<td>아이유(IU)</td>
-								<td>
-									<div>
-                                 		<a class="iq-icons-list" href="#"><i class="ion-heart"></i></a>
-                              		</div>
-								</td>
-								<td>
-									<div>
-                                 		<a class="iq-icons-list" href="#"><i class="ion-play"></i></a>
-                              		</div>
-								</td>
-								<td>
-										<a class="iq-icons-list" href="#">
-                                    <div data-icon="n" class="icon"></div></a>
-                                    	<a class="iq-icons-list" href="#">
-                                    <div data-icon="k" class="icon"></div></a>
-                                 
-								</td>
-								<td>
-									<div>
-                                 		<a class="iq-icons-list" href="#" onclick="confirm('삭제 하시겠습니까?')"><i class="ion-close-circled"></i></a>
                               		</div>
 								</td>
 							</tr>

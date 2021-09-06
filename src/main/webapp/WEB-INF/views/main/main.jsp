@@ -24,7 +24,7 @@
 						<div
 							class="iq-card-header d-flex justify-content-between border-0">
 							<div class="iq-header-title">
-								<h4 class="card-title">플레이리스트 이름</h4>
+								<h4 class="card-title">오늘의 당신에게 추천하는 플레이리스트</h4>
 							</div>
 						</div>
 						<div class="iq-card-body  iq-realeses-back">
@@ -311,7 +311,7 @@
 											<div class="iq-thumb">
 												<div class="iq-music-overlay"></div>
 												<a href="music-player.html"> <img
-													src="/palette/html/views/mymenu/1.jpg"
+													src="/palette/resources/images/dashboard/realease-song/000.jpg"
 													class="img-border-radius img-fluid w-100" alt="">
 												</a>
 												<div class="overlay-music-icon">
@@ -321,8 +321,8 @@
 												</div>
 											</div>
 											<div class="feature-list text-center">
-												<h6 class="font-weight-600 mb-0">Palette</h6>
-												<p class="mb-0">아이유</p>
+												<h6 class="font-weight-600 mb-0">THEATRE_Life is Beautiful</h6>
+												<p class="mb-0">ONEUS</p>
 											</div>
 										</div>
 									</div>
@@ -333,7 +333,7 @@
 											<div class="iq-thumb">
 												<div class="iq-music-overlay"></div>
 												<a href="music-player.html"> <img
-													src="images/dashboard/realease-song/iu2.jpg"
+													src="/palette/resources/images/dashboard/realease-song/001.jpg"
 													class="img-border-radius img-fluid w-100" alt="">
 												</a>
 												<div class="overlay-music-icon">
@@ -343,8 +343,8 @@
 												</div>
 											</div>
 											<div class="feature-list text-center">
-												<h6 class="font-weight-600 mb-0">Justin Bieber</h6>
-												<p class="mb-0">Sade Adu</p>
+												<h6 class="font-weight-600 mb-0">지우고 나면 정말 끝일까 봐</h6>
+												<p class="mb-0">더 라임</p>
 											</div>
 										</div>
 									</div>
@@ -355,7 +355,7 @@
 											<div class="iq-thumb">
 												<div class="iq-music-overlay"></div>
 												<a href="music-player.html"> <img
-													src="images/dashboard/feature-album/03.png"
+													src="/palette/resources/images/dashboard/realease-song/002.jpg"
 													class="img-border-radius img-fluid w-100" alt="">
 												</a>
 												<div class="overlay-music-icon">
@@ -365,8 +365,8 @@
 												</div>
 											</div>
 											<div class="feature-list text-center">
-												<h6 class="font-weight-600 mb-0">Pop Smoke</h6>
-												<p class="mb-0">Cascada</p>
+												<h6 class="font-weight-600 mb-0">왜 몰라</h6>
+												<p class="mb-0">에이든</p>
 											</div>
 										</div>
 									</div>
@@ -377,7 +377,7 @@
 											<div class="iq-thumb">
 												<div class="iq-music-overlay"></div>
 												<a href="music-player.html"> <img
-													src="images/dashboard/feature-album/04.png"
+													src="/palette/resources/images/dashboard/realease-song/004.jpg"
 													class="img-border-radius img-fluid w-100" alt="">
 												</a>
 												<div class="overlay-music-icon">
@@ -387,8 +387,8 @@
 												</div>
 											</div>
 											<div class="feature-list text-center">
-												<h6 class="font-weight-600 mb-0">Miranda Lambert</h6>
-												<p class="mb-0">Natasha</p>
+												<h6 class="font-weight-600 mb-0">The very first episode</h6>
+												<p class="mb-0">으네</p>
 											</div>
 										</div>
 									</div>
@@ -399,7 +399,7 @@
 											<div class="iq-thumb">
 												<div class="iq-music-overlay"></div>
 												<a href="music-player.html"> <img
-													src="images/dashboard/feature-album/05.png"
+													src="/palette/resources/images/dashboard/realease-song/003.jpg"
 													class="img-border-radius img-fluid w-100" alt="">
 												</a>
 												<div class="overlay-music-icon">
@@ -409,8 +409,8 @@
 												</div>
 											</div>
 											<div class="feature-list text-center">
-												<h6 class="font-weight-600 mb-0">Future Featuring</h6>
-												<p class="mb-0">Sophie Ellis</p>
+												<h6 class="font-weight-600 mb-0">별이 빛나는 밤에</h6>
+												<p class="mb-0">규현</p>
 											</div>
 										</div>
 									</div>
@@ -421,7 +421,7 @@
 											<div class="iq-thumb">
 												<div class="iq-music-overlay"></div>
 												<a href="music-player.html"> <img
-													src="images/dashboard/feature-album/06.png"
+													src="/palette/resources/images/dashboard/realease-song/006.jpg"
 													class="img-border-radius img-fluid w-100" alt="">
 												</a>
 												<div class="overlay-music-icon">
@@ -431,8 +431,8 @@
 												</div>
 											</div>
 											<div class="feature-list text-center">
-												<h6 class="font-weight-600 mb-0">Powfu Featuring</h6>
-												<p class="mb-0">Cheryl Cole</p>
+												<h6 class="font-weight-600 mb-0">ONE ROOM</h6>
+												<p class="mb-0">이기찬</p>
 											</div>
 										</div>
 									</div>
@@ -443,7 +443,7 @@
 											<div class="iq-thumb">
 												<div class="iq-music-overlay"></div>
 												<a href="music-player.html"> <img
-													src="images/dashboard/feature-album/07.png"
+													src="/palette/resources/images/dashboard/realease-song/007.jpg"
 													class="img-border-radius img-fluid w-100" alt="">
 												</a>
 												<div class="overlay-music-icon">
@@ -453,8 +453,8 @@
 												</div>
 											</div>
 											<div class="feature-list text-center">
-												<h6 class="font-weight-600 mb-0">Pop Smoke</h6>
-												<p class="mb-0">Patricia Kaas</p>
+												<h6 class="font-weight-600 mb-0">우리가 왜</h6>
+												<p class="mb-0">주호</p>
 											</div>
 										</div>
 									</div>
@@ -465,7 +465,7 @@
 											<div class="iq-thumb">
 												<div class="iq-music-overlay"></div>
 												<a href="music-player.html"> <img
-													src="images/dashboard/feature-album/08.png"
+													src="/palette/resources/images/dashboard/realease-song/008.jpg"
 													class="img-border-radius img-fluid w-100" alt="">
 												</a>
 												<div class="overlay-music-icon">
@@ -475,8 +475,8 @@
 												</div>
 											</div>
 											<div class="feature-list text-center">
-												<h6 class="font-weight-600 mb-0">Asylum</h6>
-												<p class="mb-0">Shreya Ghoshal</p>
+												<h6 class="font-weight-600 mb-0">Playlist (Feat. 지젤 (Jiselle))</h6>
+												<p class="mb-0">헤일</p>
 											</div>
 										</div>
 									</div>
@@ -487,7 +487,7 @@
 											<div class="iq-thumb">
 												<div class="iq-music-overlay"></div>
 												<a href="music-player.html"> <img
-													src="images/dashboard/feature-album/09.png"
+													src="/palette/resources/images/dashboard/realease-song/iu3.jpg"
 													class="img-border-radius img-fluid w-100" alt="">
 												</a>
 												<div class="overlay-music-icon">
@@ -509,7 +509,7 @@
 											<div class="iq-thumb">
 												<div class="iq-music-overlay"></div>
 												<a href="music-player.html"> <img
-													src="images/dashboard/feature-album/08.png"
+													src="/palette/resources/images/dashboard/realease-song/iu3.jpg"
 													class="img-border-radius img-fluid w-100" alt="">
 												</a>
 												<div class="overlay-music-icon">
@@ -545,7 +545,7 @@
 									<div class="iq-thumb-artist">
 										<div class="iq-music-overlay"></div>
 										<a href="music-player.html"> <img
-											src="/palette/html/views/mymenu/1.jpg"
+											src="/palette/resources/images/dashboard/realease-song/iu3.jpg"
 											class="w-100 img-fluid" alt="">
 										</a>
 										<div class="overlay-music-icon">
@@ -562,7 +562,7 @@
 									<div class="iq-thumb-artist">
 										<div class="iq-music-overlay"></div>
 										<a href="music-player.html"> <img
-											src="images/dashboard/feature-album-artist/02.png"
+											src="/palette/resources/images/dashboard/realease-song/iu3.jpg"
 											class="w-100 img-fluid" alt="">
 										</a>
 										<div class="overlay-music-icon">
@@ -579,7 +579,7 @@
 									<div class="iq-thumb-artist">
 										<div class="iq-music-overlay"></div>
 										<a href="music-player.html"> <img
-											src="images/dashboard/feature-album-artist/03.png"
+											src="/palette/resources/images/dashboard/realease-song/iu3.jpg"
 											class="w-100 img-fluid" alt="">
 										</a>
 										<div class="overlay-music-icon">
@@ -596,7 +596,7 @@
 									<div class="iq-thumb-artist">
 										<div class="iq-music-overlay"></div>
 										<a href="music-player.html"> <img
-											src="images/dashboard/feature-album-artist/04.png"
+											src="/palette/resources/images/dashboard/realease-song/iu3.jpg"
 											class="w-100 img-fluid" alt="">
 										</a>
 										<div class="overlay-music-icon">
@@ -613,7 +613,7 @@
 									<div class="iq-thumb-artist">
 										<div class="iq-music-overlay"></div>
 										<a href="music-player.html"> <img
-											src="images/dashboard/feature-album-artist/05.png"
+											src="/palette/resources/images/dashboard/realease-song/iu3.jpg"
 											class="w-100 img-fluid" alt="">
 										</a>
 										<div class="overlay-music-icon">
@@ -630,7 +630,7 @@
 									<div class="iq-thumb-artist">
 										<div class="iq-music-overlay"></div>
 										<a href="music-player.html"> <img
-											src="images/dashboard/feature-album-artist/06.png"
+											src="/palette/resources/images/dashboard/realease-song/iu3.jpg"
 											class="w-100 img-fluid" alt="">
 										</a>
 										<div class="overlay-music-icon">
@@ -647,7 +647,7 @@
 									<div class="iq-thumb-artist">
 										<div class="iq-music-overlay"></div>
 										<a href="music-player.html"> <img
-											src="images/dashboard/feature-album-artist/07.png"
+											src="/palette/resources/images/dashboard/realease-song/iu3.jpg"
 											class="w-100 img-fluid" alt="">
 										</a>
 										<div class="overlay-music-icon">
@@ -681,7 +681,7 @@
 									<div class="iq-thumb-artist">
 										<div class="iq-music-overlay"></div>
 										<a href="music-player.html"> <img
-											src="images/dashboard/feature-album-artist/09.png"
+											src="/palette/resources/images/dashboard/realease-song/iu3.jpg"
 											class="w-100 img-fluid" alt="">
 										</a>
 										<div class="overlay-music-icon">
@@ -698,7 +698,7 @@
 									<div class="iq-thumb-artist">
 										<div class="iq-music-overlay"></div>
 										<a href="music-player.html"> <img
-											src="images/dashboard/feature-album-artist/10.png"
+											src="/palette/resources/images/dashboard/realease-song/iu3.jpg"
 											class="w-100 img-fluid" alt="">
 										</a>
 										<div class="overlay-music-icon">

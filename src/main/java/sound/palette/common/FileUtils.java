@@ -48,4 +48,37 @@ public class FileUtils {
 		}
 		return list;
 	}
+	
+	//음악파일 업로드
+		public List<Map<String, Object>> parseInsertMusicInfo(Map<String, Object> map, MultipartHttpServletRequest multipartHttpServletRequest)
+				throws Exception {
+			Iterator<String> iterator = multipartHttpServletRequest.getFileNames();
+			MultipartFile multipartFile = null;
+			String originalFileName = null;
+			String originalFileExtension = null;
+			String storedFileName = null;
+			List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
+			Map<String, Object> listMap = null;
+			File file = new File(filePath);
+			if (file.exists() == false) {
+				file.mkdirs();
+			}
+			while (iterator.hasNext()) {
+				multipartFile = multipartHttpServletRequest.getFile(iterator.next());
+				if (multipartFile.isEmpty() == false) {
+					originalFileName = multipartFile.getOriginalFilename();
+					originalFileExtension = originalFileName.substring(originalFileName.lastIndexOf("."));
+					storedFileName = CommonUtils.getRandomString() + originalFileExtension;
+					file = new File(filePath + storedFileName);
+					multipartFile.transferTo(file);
+					listMap = new HashMap<String, Object>();
+					listMap.put("MUSIC_TITLE", originalFileName);
+					listMap.put("MUSIC_LINK", storedFileName);
+					listMap.put("MUSIC_ART", map.get("MRB_ART"));
+					list.add(listMap);
+				}
+			}
+			return list;
+		}
+	
 }

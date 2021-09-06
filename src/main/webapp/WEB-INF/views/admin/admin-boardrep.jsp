@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,13 +11,7 @@
 </head>
 <body>
 <%@ include file="../main/main-top.jspf" %>
-<c:if test="${sessionScope.MEM_AUTH == 'N'}" >
- <br/>
- <br/>
- <br/>
- <h1><center>관리자 전용 페이지입니다.</center></h1>
- </c:if>
-<c:if test="${sessionScope.MEM_AUTH == 'Y'}">
+ 
       <!-- TOP Nav Bar END -->
       <!-- Page Content  -->
       <div id="content-page" class="content-page">
@@ -116,6 +109,6 @@
    <!-- Footer END -->
    <!-- color-customizer -->
    
-  </c:if>
+   
 </body>
 </html>
